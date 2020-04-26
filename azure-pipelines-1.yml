@@ -6,4 +6,4 @@ steps:
   displayName: Build an image
   inputs: 
     command: build
-    Dockerfile:Dockerfile
+    Dockerfile: Dockerfile
