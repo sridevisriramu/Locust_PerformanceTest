@@ -1,0 +1,14 @@
+docker run -p 8089:8089 --volume $PWD/dir/of/locustfile:/mnt/locust -e LOCUSTFILE_PATH=/mnt/locust/locustfile.py -e TARGET_URL=https://abc.com locustio/locust
+
+docker run -p 8089:8089 --volume C:\2020\Locust:/mnt/locust -e LOCUSTFILE_PATH=/mnt/locust/locustfile.py -e TARGET_URL=https://abc.com locustio/locust
+
+
+docker run -p 8089:8089 --volume C:\2020\Locust:/mnt/locust -e LOCUSTFILE_PATH=/mnt/locust/locustfile.py -e TARGET_URL=https://gmail.com locustio/locust
+
+
+To run the script: locust -f AssertionsWithLocust.py --no-web -c 50 -r 10
+
+docker run -p 8081:8089 --volume C:\2020\Locust:/mnt/locust -e LOCUSTFILE_PATH=/mnt/locust/Assertions.py -e TARGET_URL=http://blazedemo.com locustio/locust
+
+
+http://blazedemo.com
